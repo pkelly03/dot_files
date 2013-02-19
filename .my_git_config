@@ -1,0 +1,21 @@
+# git aliases
+git config --global color.diff auto
+git config --global color.status auto
+git config --global color.interactive auto
+git config --global color.branch auto
+git config --global core.editor subl
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.changes 'log --pretty=format:"%h - %an, %ar : %s"  HEAD..origin'
+git config --global alias.ci commit
+git config --global alias.br branch
+git config --global alias.last 'log -1 HEAD'
+git config --global alias.unstage 'reset HEAD --'
+git config --global user.name 'Paul Kelly'
+git config --global user.email 'pkelly@equalexperts.com'
+git config --global alias.incoming '!git fetch; git log --pretty=format:"%h - %an, %ar : %s" ..@{u}'
+git config --global alias.outgoing 'log @{u}..'
+git config --global alias.stash-unapply '!git stash show -p | git apply -R'
+git config --global alias.list-remote '!git ls-remote --heads origin'
+git config --global alias.delete-remote '!git push origin'
+git config --global push.default simple

@@ -1,0 +1,91 @@
+alias l="ls -lrt"
+alias lp="ls -p"
+alias h=history
+alias c='cd ..'
+alias sql="mysql -u dev -pbobbins endeavour"
+alias git_tocommit='git diff --cached'
+alias sonar='cd ~/tools/sonar/bin/linux-x86-64'
+alias la="list_all.sh &"
+alias ka="kill_all.sh &"
+
+# Heroku aliases
+alias he="heroku"
+alias hps="heroku ps"
+alias hop="heroku open"
+
+# Tomcat aliases
+alias tomcat-debug="catalina jpda run > ~/tomcat.log 2>&1"
+alias tomcat="rm ~/tomcat.log | catalina run > ~/tomcat.log 2>&1"
+
+# Git aliases
+alias gl='git log --pretty=format:"%h - %an, %ar : %s"'
+alias gldiff='gl origin/master..master'
+
+# Mongo Course Aliases
+alias mc="cd ~/mongoCourse"
+
+# Curl aliases
+alias curl_form='curl -v --form "fileupload=@names.csv" http://localhost:8080/rest/csv-admin/upload'
+alias curl_post='curl -v -X POST -d @names.csv http://localhost:8080/rest/csv-admin/upload'
+alias curl_file='curl -v -F "file=@names.csv" http://localhost:8080/rest/csv-admin/upload'
+
+# Bash aliases
+alias confige="subl ~/.zshrc"
+alias configu="source ~/.zshrc"
+alias configalias="subl ~/.my_aliases"
+alias configgit="subl ~/.my_git_config"
+
+
+# Yeoman aliases
+alias ymget='curl -L get.yeoman.io | bash'
+
+alias ym='yeoman help'
+alias ymv='yeoman --version'
+
+alias ymi='yeoman init'
+alias ymb='yeoman build'
+alias ymsv='yeoman server'
+alias ymsd='yeoman server:dist'
+alias ymst='yeoman server:test'
+
+alias ymt='yeoman test'
+alias ymii='yeoman install'
+alias ymui='yeoman uninstall'
+alias ymu='yeoman update'
+alias yml='yeoman list'
+alias yms='yeoman search'
+alias ymlu='yeoman lookup'
+
+#Git aliases
+alias gp='git pull origin master'
+alias git-clean='git clean -f -x -d'
+
+alias tomcat_log="tail -f /usr/local/Cellar/tomcat/7.0.28/libexec/logs/catalina.out"
+alias psgrep='ps aux |grep java'
+
+# Gradle aliases
+alias ge='gradle everything -DaccTestThreads=4'
+alias gf='gradle functionalTest -DaccTestThreads=4'
+alias gcb='gradle clean build "$@"'
+alias gf='gradle functionalTest'
+alias gdeploy='gradle war localDeploy'
+alias deploy='gradle clean build localDeploy'
+alias gci='gradle cleanIdea idea'
+alias gcss='gradle copyCss -DtomcatDir=/usr/local/Cellar/tomcat/7.0.29/libexec/webapps/web-ui/css'
+alias gr='gradle run'
+
+# Grunt Aliases
+alias gru='grunt --config GruntFile.js'
+
+
+# Misc
+alias python-server='python -m SimpleHTTPServer'
+# the "kp" alias ("que pasa"), in honor of tony p.
+alias kp="ps auxwww"
+alias ee="cd ~/equalexperts/TelefonicaInsightServices/smartsteps"
+alias tsc="cd ~/Projects/thisstrangecity"
+alias portstatus="nc -zw2 localhost $1"
+alias ccompile="coffee --compile --output lib/ src/"
+alias ss="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background &"
+alias javafolder='cd /System/Library/Frameworks/JavaVM.framework'
+alias du='du -sh'
