@@ -1,0 +1,98 @@
+[
+{ "keys": ["ctrl+s"], "command": "toggle_side_bar" },
+{ "keys": ["super+f4"], "command": "close" },
+{ "keys": ["ctrl+shift+x"], "command": "tidy_xml" },
+{ "keys": ["ctrl+shift+j"], "command": "prettify_json" },
+{ "keys": ["super+shift+d"], "command": "duplicate_line" },
+{ "keys": ["super+w"], "command": "find_under_expand" },
+{ "keys": ["super+alt+l"], "command": "js_format"},
+{ "keys": ["super+f9"], "command": "sublimelinter", "args": {"action": "lint"} },
+{ "keys": ["super+f8"], "command": "find_next_lint_error" },
+{ "keys": ["super+f7"], "command": "find_previous_lint_error" },
+{ "keys": ["super+shift+a"], "command": "add_surround" },
+{ "keys": ["super+shift+r"], "command": "reveal_in_side_bar" },
+{ "keys": ["super+0"], "command": "toggle_side_bar" },
+{ "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+{ "keys": ["alt+shift+p"], "command": "pomodoro", "args": {"workingMins": 25, "restingMins": 5} },
+{ "keys": ["alt+super+j"], "command": "js_run" },
+{ "keys": ["super+shift+i"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+{ "keys": ["f1"], "command": "toggle_overwrite" },
+{ "keys": ["ctrl+shift+a"], "command": "close_others" },
+{ "keys": ["super+forward_slash"], "command": "toggle_comment" },
+{ "keys": ["shift+f3"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Angular"} },
+{ "keys": ["ctrl+left"], "command": "prev_view" },
+{ "keys": ["ctrl+right"], "command": "next_view" },
+{ "keys": ["ctrl+alt+f"], "command": "js_format"},
+{ "keys": ["alt+w"], "command": "show_scala_worksheet" },
+{ "keys": ["super+alt+["], "command": "fold" },
+{ "keys": ["super+alt+]"], "command": "unfold" },
+{ "keys": ["super+j", "super+1"], "command": "fold_by_level", "args": {"level": 1} },
+{ "keys": ["super+j", "super+2"], "command": "fold_by_level", "args": {"level": 2} },
+{ "keys": ["super+j", "super+3"], "command": "fold_by_level", "args": {"level": 3} },
+{ "keys": ["super+j", "super+4"], "command": "fold_by_level", "args": {"level": 4} },
+{ "keys": ["super+j", "super+5"], "command": "fold_by_level", "args": {"level": 5} },
+{ "keys": ["super+j", "super+6"], "command": "fold_by_level", "args": {"level": 6} },
+{ "keys": ["super+j", "super+7"], "command": "fold_by_level", "args": {"level": 7} },
+{ "keys": ["super+j", "super+8"], "command": "fold_by_level", "args": {"level": 8} },
+{ "keys": ["super+j", "super+9"], "command": "fold_by_level", "args": {"level": 9} },
+{ "keys": ["super+j", "super+0"], "command": "unfold_all" },
+{ "keys": ["super+j", "super+j"], "command": "unfold_all" },
+{ "keys": ["shift+f6"], "command": "side_bar_rename" },
+{ "keys": ["ctrl+o"], "command": "side_bar_open_in_browser" , "args":{"paths":[], "type":"testing"}},
+{ "keys": ["super+j", "super+t"], "command": "fold_tag_attributes" },
+{ "keys": ["super+shift+f"], "command": "side_bar_open_with_finder",
+"args": {
+  "paths": ["%CWD%"]
+}
+},
+{ "keys": ["super+shift+l"], "command": "reindent" , "args": {"single_line": false}},
+  // Go to left bracket
+  {
+    "keys": ["ctrl+alt+up"],
+    "command": "bh_key",
+    "args":
+    {
+      "lines" : true,
+      "plugin":
+      {
+        "type": ["__all__"],
+        "command": "bh_modules.bracketselect",
+        "args": {"select": "left"}
+      }
+    }
+    },
+    // Go to right bracket
+    {
+      "keys": ["ctrl+alt+down"],
+      "command": "bh_key",
+      "args":
+      {
+        "lines" : true,
+        "plugin":
+        {
+          "type": ["__all__"],
+          "command": "bh_modules.bracketselect",
+          "args": {"select": "right"}
+        }
+      }
+      },
+    // Toggle high visibility
+    {
+      "keys": ["ctrl+alt+v"],
+      "command": "bh_toggle_high_visibility"
+      },
+    // Select text between brackets
+    {
+      "keys": ["ctrl+alt+a"],
+      "command": "bh_key",
+      "args":
+      {
+        "lines" : true,
+        "plugin":
+        {
+          "type": ["__all__"],
+          "command": "bh_modules.bracketselect"
+        }
+      }
+    }
+    ]
